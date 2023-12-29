@@ -1,0 +1,10 @@
+import streamlit as st
+st.set_page_config(layout="wide")
+st.title("Student Management System")
+st.sidebar.title("Fee Management System")
+st.sidebar.subheader("Menu")
+st.sidebar.radio("Choose an option",["Add student","delete student","view fee","pay fee"])
+rollnumber=st.text_input("Enter student roll Number")
+name=st.text_input("Enter student name")
+fee=st.number_input("Enter student fee",min_value=0.0,format="%f")
+add=st.button("Add student")
